@@ -1,0 +1,52 @@
+Common Language Runtime (CLR):
+-------------------------------
+Acts a memory manager (garbage collection),
+Acts as a translator, understands all these languages and makes sure the code can communicate with each other.
+Inspects the code and catch mistakes. 
+
+Class libraries:
+----------------
+.NET Framework includes a vast set of class libraries that provide pre-built functionality for common tasks.
+These libraries are organized into namespaces, developers can access and use their components.
+
+
+
+Cross-Platform Development:
+---------------------------
+.NET 5 and later, are designed to be cross-platform. 
+This means you can develop and run .NET applications on Windows, Linux, and macOS.
+
+Language Versatalty:
+--------------------
+.NET Framework supports multiple programming languages, including C#, VB.NET, F#, and more.
+C# is versatile and can be used for desktop applications (Windows Forms, WPF), web development (ASP.NET), games (Unity)
+
+Application Types:
+------------------
+1. Windows Forms: For building desktop applications with a graphical user interface (GUI).
+2. WPF (Windows Presentation Foundation): For creating rich desktop applications with advanced user interfaces.
+3. Xamarin: For cross-platform mobile app development.
+4. Console Applications: For command-line utilities.
+5. Web APIs: For building RESTful APIs.
+6. ASP.NET: For developing web applications and services.
+
+Base Class Library:
+-------------------
+Base Class Libraries (BCL) are collections of reusable classes, types, and functions that provide fundamental functionality for building software applications in a particular programming environment or platform.
+developers can use to perform essential tasks without having to reinvent the wheel. 
+Namespaces like System, System.IO, and System.Net are part of the .NET BCL.
+
+Integrated Development Environment (IDE):
+----------------------------------------
+provides all the tools and features needed to create, edit, test, and manage .NET-based software projects in one place. 
+
+
+ASP.NET:
+--------
+ASP.NET allows you to write code that runs on the web server.
+Active Server Pages .NET." ASP.NET takes care of handling web requests, processing data, and generating web pages on the server side.
+
+
+Web Development in .NET: 
+------------------------
+It means you write code using languages like C# or Visual Basic .NET to build the logic and functionality of your website.

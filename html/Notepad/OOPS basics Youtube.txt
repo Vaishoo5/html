@@ -1,0 +1,18 @@
+OOPS:
+
+CLASS: 
+-->Template for creating multiple Objects.
+
+CONSTRUCTOR: 
+-->All properties have to mentioned here.
+-->Everytime an object is created, the constructor is called first.
+-->Constructor method contains all the object properties.
+
+THIS:
+-->'this' represents the object to which it belongs to
+-->To access any properties or methods within an object, we use this.propName
+   They can't be directly accessed.
+
+STATIC:
+-->Some properties or methods are independent of the values received from the new object creation.
+-->These can be written under the static keyword. 

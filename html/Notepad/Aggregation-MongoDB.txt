@@ -1,0 +1,35 @@
+AGGREGATE:
+----------
+same:   db.persons.aggregate([]);  is same as
+same:   db.persons.find({});
+
+Stages:
+-------
+$match
+$group
+$project
+$sort
+$count
+$limit
+$skip
+$out
+
+Expressions: refers to the name of the field in the input documents.
+-----------
+$group:{_id:"$id",total:{}}
+
+db.Products.aggregate([
+{$project:{title:1,price:1,category:1,rating:1}},
+{$group:{_id:"$category"}}
+])
+
+{$and:[{"category":"men's clothing"},{"rating.rate":{$gt:4}}]}
+
+db.Products.aggregate([{$addFields:{totalPrice:{$multiply:["$rating.count","$price"]}}}])
+
+
+{validator:{$jsonSchema:{
+  bsonType:"object",
+  title:"Product validations",
+  required:["price","rating"]
+}}}

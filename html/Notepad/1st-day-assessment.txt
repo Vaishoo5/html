@@ -1,0 +1,23 @@
+SDLC AND SDLC MODELS
+SRS/FSD
+Impact analysis document? purpose
+Change request? when need?
+NFR non functional requirement? Name 2
+HLD? purpose
+LLD? purpose
+Name few design principles
+Data modelling? why need?
+Source control? Name any SCM
+Dfence coding?
+Exception handling? why imp?
+Logging? why need?
+profilig? purpose?
+types of unit testing?
+Defect leakage?
+Regression?
+Integeration testing?
+Security testing? key objectives
+Dff btw Product and service
+Name 3 Estimation techniques
+Release versioning? why need?
+Name few maintenance activities involved post release of any software.

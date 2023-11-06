@@ -1,0 +1,125 @@
+NODE JS:
+--------
+
+window (browser)  =  global (terminal)
+document (browser)  =  process (terminal)
+process.exit();
+
+modules:
+--------
+in-built modules    ex: http
+3rd party modules   ex: nodemon
+custom modules
+
+Module.export()
+---------------
+Module is a property in the 'process' object.
+Contains an empty object.
+
+We can import core modules & 3rd-party modules directly without using './'
+
+Export & Import:
+---------------
+
+Export:
+function sum(a,b){           
+    return a+b;
+}
+module.exports={sum};       (or)            exports.sum=(a,b)=>a+b;    //arrow function
+
+Import:
+const helpers=require('./helper');
+const total=helpers.sum(5,10);
+console.log('result is ',total);
+
+
+const {sum}=require('./helper');
+const total=sum(50,10);
+console.log('result is ',total);
+
+
+npm init:
+--------
+creates package.json file in vs code.
+package.json file contains all the information about the packages and dependencies.
+
+nodemon package:
+---------------
+Automatically restarts the node application, when file changes in the directory are detected.
+nodemon keeps on waiting for any changes.
+
+In package.json file:
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+npm i nodemon
+creates node_modules folder in vs code.
+
+"scripts": {
+    "start": "node script.js"
+  },
+
+npm run start
+
+"scripts": {
+    "start": "nodemon script.js"
+  },
+
+npm run start
+
+http module:
+-----------
+const http=require('http');
+const server=http.createServer((req,res)=>{
+    res.end("Response from the Server");
+    console.log("Server connneted to port 3000")
+});
+server.listen(3001);
+
+Check localhost:3000
+
+Express:
+-------
+Express.js is a popular web application framework for Node.js
+allows you to define how different HTTP requests should be handled. 
+define routes for handling GET, POST, PUT, DELETE requests, and more.
+
+Mongoose vs MongoDB:
+------------------
+
+app=express();
+app.get('/',()=>{});
+fs.watch()
+
+
+
+
+
+
+
+
+
+
+
+EXPRESS JS:
+----------
+Body Parser Package: 
+--------------------
+Whatever data is sent from the user to the client, it automatically converts it to a format that the server understands.
+No need to manually convert the req data to different formats like using toString(); method.
+
+Middleware:
+----------
+To handle the requests, express js passes these req to all the middlewares before it reaches the server.
+If we use the use() method, we have to manually add the response of that middleware. And use the next() function to direct it to the next middleware.
+
+res.send():
+----------
+automatically creates the response Header content type according to the data that we send.
+
+express.urlencoded():
+-------------------
+URL-encoded request bodies make the data available in a more structured format for your server to work with. 
+allows you to access the data as JavaScript objects in your route handlers, making it easier to process and respond to user input.
+Ex: name=John+Doe&age=30&city=New+York

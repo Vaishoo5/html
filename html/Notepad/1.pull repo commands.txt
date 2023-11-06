@@ -1,0 +1,11 @@
+PULL repo from github to local:
+------------------------------- 
+
+git init
+git remote add origin https://github.com/vd-vaishoo/vd_vaishoo.git
+git pull origin main
+
+Folder change commands:
+-----------------------
+cd..
+D:
